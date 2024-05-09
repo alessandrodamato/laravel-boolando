@@ -1,0 +1,46 @@
+footer{
+    height: 100px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    .box{
+      height: 100px;
+      justify-content: space-between;
+    }
+    .footer-left{
+      flex-direction: column;
+      justify-content: center;
+      h3{
+        padding: 5px;
+        font-size: 1rem;
+      }
+      ul{
+        padding: 5px;
+      }
+      a{
+        padding-right: 10px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .footer-right{
+      flex-direction: column;
+      justify-content: center;
+      h4{
+        text-align: center;
+        padding: 5px;
+      }
+      a{
+        padding-left: 10px;
+      }
+    }
+    nav{
+      ul{
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+@use './variables' as *; 
+
+.container{
+  max-width: $container-w;
+  margin: 0 auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.f-size-small{
+  font-size: .8rem;
+}
+
+ul{
+  list-style: none;
+}
+
+header .box, footer .box{
+  padding: 0 10px;
+}
