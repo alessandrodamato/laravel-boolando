@@ -1,9 +1,12 @@
-// @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
-@import url(./partial/_variables.scss);
-@import url(./partial/_utils.scss);
-@import url(./partial/_general.scss);
+@import '@fontsource/roboto';
 
-@import url(./partial/_header.scss);
-@import url(./partial/_main.scss);
-@import url(./partial/_footer.scss);
+@import './partials/_variables.scss';
+@import './partials/_utils.scss';
+@import './partials/_general.scss';
+
+@import './partials/_header.scss';
+@import './partials/_main.scss';
+@import './partials/_footer.scss';
+
