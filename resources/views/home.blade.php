@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>home</h1>
+    <div class="container d-flex box">
+
+        <h1>home</h1>
+
+    </div>
 @endsection
