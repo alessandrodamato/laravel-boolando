@@ -13,7 +13,7 @@
       </nav>
 
       <div class="logo">
-        <a href="{{route('products')}}"><img src="/img/boolean-logo.png" alt="Logo"></a>
+        <a href="{{route('home')}}"><img src="/img/boolean-logo.png" alt="Logo"></a>
       </div>
 
       <nav class="menu">

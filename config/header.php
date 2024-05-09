@@ -17,6 +17,10 @@ return [
     ],
     'header_right' => [
         [
+            'icon' => 'Prodotti',
+            'href' => 'products'
+        ],
+        [
             'icon' => '<i class="fa-regular fa-user"></i>',
             'href' => 'profile'
         ],
