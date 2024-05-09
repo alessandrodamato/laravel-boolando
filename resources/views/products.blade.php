@@ -33,7 +33,6 @@
             @endforeach
         </span>
 
-
     </div>
     @endforeach
 

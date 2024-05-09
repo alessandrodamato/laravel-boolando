@@ -7,9 +7,11 @@
 
       <nav>
         <ul class="d-flex f-size-small">
-          <li>
-            <a href="#">text</a>
-          </li>
+            @foreach ($footer['footer_left'] as $item)
+                <li>
+                    <a href="/">{{$item['text']}}</a>
+                </li>
+            @endforeach
         </ul>
       </nav>
     </div>
@@ -19,9 +21,11 @@
 
       <nav>
         <ul class="d-flex">
-          <li>
-            <a href="#">text</a>
-          </li>
+            @foreach ($footer['footer_right'] as $item)
+                <li>
+                    <a href="/"><?php echo $item['icon'] ?></a>
+                </li>
+            @endforeach
         </ul>
       </nav>
     </div>

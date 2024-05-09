@@ -11,7 +11,7 @@ return [
             'href' => 'man'
         ],
         [
-            'text' => 'Bambini',
+            'text' => 'Bambino',
             'href' => 'children'
         ]
     ],
@@ -22,7 +22,7 @@ return [
         ],
         [
             'icon' => '<i class="fa-regular fa-heart"></i>',
-            'href' => 'favourites'
+            'href' => 'favorites'
         ],
         [
             'icon' => '<i class="fa-solid fa-bag-shopping"></i>',
