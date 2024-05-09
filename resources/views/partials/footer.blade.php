@@ -9,7 +9,7 @@
         <ul class="d-flex f-size-small">
             @foreach ($footer['footer_left'] as $item)
                 <li>
-                    <a href="/">{{$item['text']}}</a>
+                    <a href="{{route('home')}}">{{$item['text']}}</a>
                 </li>
             @endforeach
         </ul>
@@ -23,7 +23,7 @@
         <ul class="d-flex">
             @foreach ($footer['footer_right'] as $item)
                 <li>
-                    <a href="/"><?php echo $item['icon'] ?></a>
+                    <a href="{{route('home')}}"><?php echo $item['icon'] ?></a>
                 </li>
             @endforeach
         </ul>

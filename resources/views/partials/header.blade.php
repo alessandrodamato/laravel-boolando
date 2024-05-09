@@ -6,7 +6,7 @@
         <ul class="d-flex">
             @foreach ($header['header_left'] as $item)
                 <li>
-                    <a href="{{route($item['href'])}}">{{$item['text']}}</a>
+                    <a class="{{Route::currentRouteName() === $item['href'] ? 'page-active' : ''}}" href="{{route($item['href'])}}">{{$item['text']}}</a>
                 </li>
             @endforeach
         </ul>
@@ -21,7 +21,7 @@
             @foreach ($header['header_right'] as $item)
                 <li>
                     {{-- ho utilizzato il tag php perché con {{$item['icon']}} mi avrebbe stampato i tag per intero --}}
-                    <a href="{{route($item['href'])}}"><?php echo $item['icon'] ?></a>
+                    <a class="{{Route::currentRouteName() === $item['href'] ? 'page-active' : ''}}" href="{{route($item['href'])}}"><?php echo $item['icon'] ?></a>
                 </li>
             @endforeach
         </ul>
