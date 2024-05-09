@@ -22,5 +22,10 @@ Route::get('/chi-siamo', function () {
 })->name('about');
 
 Route::get('/prodotti', function () {
-    return view('products');
+    $products = config('products');
+    $products_obj = [];
+    foreach($products as $product){
+        $products_obj [] = (object) $product;
+    }
+    return view('products', compact('products_obj'));
 })->name('products');
