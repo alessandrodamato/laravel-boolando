@@ -7,8 +7,8 @@
     <div class="product">
 
         <div class="product-img">
-          <img class="main-img" src="{{Vite::asset('resources/img/')}}{{$product->frontImage}}" alt="{{$product->name}}">
-          <img class="hover-img" src="{{Vite::asset('resources/img/')}}{{$product->backImage}}" alt="{{$product->name}}">
+          <img class="main-img" src="{{Vite::asset('resources/img/' . $product->frontImage)}}" alt="{{$product->name}}">
+          <img class="hover-img" src="{{Vite::asset('resources/img/' . $product->backImage)}}" alt="{{$product->name}}">
           <div class="f-size-small tags">
             @foreach (array_reverse($product->badges) as $badge)
                 <div class="badge {{$badge['type']}}">{{$badge['value']}}</div>
